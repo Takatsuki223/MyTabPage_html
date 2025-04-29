@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Tit';
+    src: local('douyufont'), 
+         url('../fonts/TsangerYuYangT-W05.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Time';
+    src: local('douyufont'), 
+         url('../fonts/Dream-BraveGB-Bold.ttf') format('truetype');
+}
+
+
+
+.banner{
+    height: 99px;                              /*通栏，只设置高度，宽度和窗口一样大*/
+    background-color: rgb(147, 184, 226);
+    box-shadow: 0px 4px 3px rgba(70,70,70,1);
+    
+}
+.head_img{
+    background-image: url("../icon/Headimg2.png");
+    width: 1897px;                 /*大小和1080p窗口打开时的通栏一样*/
+    height: 99px;                  /*指定高度，不指定高度会没有*/
+    margin: 0px auto;              /*上下0，左右自动则居中！版心居中！*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;            /*其子元素需要定位，作为父元素搞相对定位*/
+
+
+}
+.headTitle{
+    color: white;
+    text-shadow: 3px 3px 2px rgb(0, 0, 0);
+    position: absolute;            /*子元素绝对定位*/
+    top: -20px;                    /*不写默认垂直居中了，所以要负数*/
+    left: 10px;
+    font-size: 36px;
+    font-family: 'Tit';
+    font-weight: normal;
+
+}
+#utcTime{
+    color: white;
+    text-shadow: 3px 3px 0px rgb(32, 0, 173);
+    font-weight: 500;
+    font-size: 24px;
+    position: absolute;           /*子元素绝对定位*/
+    bottom: -20px;                /*不写默认垂直居中了，所以要负数*/
+    right: 15px;
+    font-family: 'Time';
+}

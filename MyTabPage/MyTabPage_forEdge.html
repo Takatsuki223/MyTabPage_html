@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新标签页</title>
+    <link rel="stylesheet" href="./css/Edge.css">
+
+    <script>  /*更新时间用*/
+        function updateTime() {  
+            const now = new Date();  
+            // 转换为北京时间（UTC+8）  
+ 
+        // UTC时间，只保留月份（英文缩写）、日期和时间  
+            const utcMonth = now.toUTCString().split(' ')[2]; // 月份英文缩写  
+            const utcDate = now.getUTCDate(); // 日期  
+            const utcHours = now.getUTCHours().toString().padStart(2, '0'); // 小时，不足两位前面补0  
+            const utcMinutes = now.getUTCMinutes().toString().padStart(2, '0'); // 分钟，不足两位前面补0  
+            const utcSeconds = now.getUTCSeconds().toString().padStart(2, '0'); // 秒，不足两位前面补0  
+            // 格式化UTC时间  
+            const utcTimeFormatted = `${utcMonth} ${utcDate.toString().padStart(2, '0')}   ${utcHours}:${utcMinutes}:${utcSeconds}`;  
+          
+            // 更新页面上的时间  
+            document.getElementById('utcTime').innerText = utcTimeFormatted; 
+          
+            // 每隔一秒更新时间  
+            setTimeout(updateTime, 1000);  
+        }  
+          
+        // 页面加载完成后立即更新时间  
+        window.onload = function() {  
+            updateTime();  
+        };  
+    </script>
+
+</head>
+<body>
+    <div class="banner">
+        <div class="head_img">
+            <h1 class="headTitle">属于自己的标签页</h1>
+            <p id="utcTime">正在加载时间</p>
+        </div>
+    </div>
+
+
+    
+</body>
