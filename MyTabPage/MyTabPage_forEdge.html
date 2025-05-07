@@ -17,7 +17,7 @@
             const utcMinutes = now.getUTCMinutes().toString().padStart(2, '0'); // 分钟，不足两位前面补0  
             const utcSeconds = now.getUTCSeconds().toString().padStart(2, '0'); // 秒，不足两位前面补0  
             // 格式化UTC时间  
-            const utcTimeFormatted = `${utcMonth} ${utcDate.toString().padStart(2, '0')}   ${utcHours}:${utcMinutes}:${utcSeconds}`;  
+            const utcTimeFormatted = `${utcMonth}${utcDate.toString().padStart(2, '0')}  ${utcHours}:${utcMinutes}:${utcSeconds}`;  
           
             // 更新页面上的时间  
             document.getElementById('utcTime').innerText = utcTimeFormatted; 
@@ -39,8 +39,87 @@
             <h1 class="headTitle">属于自己的标签页</h1>
             <p id="utcTime">正在加载时间</p>
         </div>
+        <br>
+    </div>
+    <div class="wrapper">
+        <div class="left">
+            <ul>
+                <li>
+                    <a href="https://www.bilibili.com/" target="blank">B</a>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li>
+                    <a href="https://zh.wikipedia.org/" target="blank" id="wiki">ZH</a>
+                </li>
+                <li>
+                    <a href="https://commons.m.wikimedia.org/" target="blank" id="wikim"></a>
+                </li>
+                <li>
+                    <a href="https://ja.m.wikipedia.org/" target="blank" id="wiki">JP</a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/" target="blank" id="bili"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="blank" id="youtube"></a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/" target="blank">B</a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/" target="blank">B</a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/" target="blank">B</a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/" target="blank">B</a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/" target="blank">B</a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/" target="blank">B</a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/" target="blank">B</a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/" target="blank">B</a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/" target="blank">B</a>
+                </li>
+                <li>
+                    <a href="https://www.bilibili.com/" target="blank">B</a>
+                </li>
+            </ul>
+        </div>
     </div>
 
+    
 
     
 </body>
