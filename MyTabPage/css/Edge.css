@@ -13,27 +13,24 @@
 
 .banner{
     height: 97.5px;                                       /*通栏，只设置高度，宽度和窗口一样大*/
-    background-color: rgb(147, 184, 226);
+    background-color: rgb(147, 184, 226);              
     box-shadow: 0px 4px 3px rgba(70,70,70,1);
     margin-bottom: 30px;
     
 }
 .head_img{
     background-image: url("../icon/Headimg2.png");
-    width: 1872px;                                  /*大小和1080p窗口打开时的通栏一样*/
-    height: 97.5px;                                /*指定高度，不指定高度会没有*/
+    width: 1862px;                                  /*大小和1080p窗口打开时的通栏一样*/
+    height: 97px;                                /*指定高度，不指定高度会没有*/
     margin: 0px auto;                             /*上下0，左右自动则居中！版心居中！*/
     position: relative;                          /*其子元素需要定位，作为父元素搞相对定位*/
     background-repeat: no-repeat;
     background-size:cover;
-    
-
-
 }
 .headTitle{
     color: white;
     text-shadow: 3px 3px 2px rgb(0, 0, 0);
-    position: absolute;                        /*子元素绝对定位*/
+    position: absolute;                        /*子元素绝对定位*/   
     top: -20px;                               /*不写默认垂直居中了，所以要负数*/
     left: 10px;
     font-size: 36px;
@@ -48,17 +45,17 @@
     font-size: 28px;
     position: absolute;            /*子元素绝对定位*/
     bottom: -25px;                /*不写默认垂直居中了，所以要负数*/
-    right: 10px;
+    right: 10px;                  
     font-family: 'Time';
 }
 
-.wrapper{                            /*版心，始终居中*/
+.wrapper{                                    /*版心，始终居中*/
     /* background-color: skyblue; */
     margin: 0px auto;
-    height: 880px;
-    width: 1860px;
-    display: flex;                   /*改成flex布局让左右两块并列*/
-    justify-content: space-between; /*左右两块就中间有空隙*/
+    height: 780px;
+    width: 1840px;
+    display: flex;                     /*改成flex布局让左右两块并列*/
+    justify-content: space-between;   /*左右两块就中间有空隙*/
 }
 .wrapper .left{                     /*版心左块*/
     /* background-color: rgb(230, 230, 230); */
@@ -78,15 +75,15 @@ ul{                                      /*列表的样式*/
 }
 li{
     width: 120px;
-    height: 120px;
+    height: 120px;                                    
     list-style: none;                                /*去除点符号*/
     background-color:rgb(230, 230, 230);          /*做测试效果用*/
     margin-bottom: 20px;                           /*每块的下间距*/
-    margin-right: 20px;                            /*每块的右间距*/
-    border-radius: 15%;
+    margin-right: 20px;                           /*每块的右间距*/
+    border-radius: 15%;                          /*圆角矩形圆角*/
     box-shadow: 4px 4px 2.5px rgba(90, 90, 90, 1);
-
-
+    text-align: center;                         /*默认文字居中*/
+    
 }
 .wrapper .left li:nth-child(10n){         /*版心左块，每行的末尾块不加右边距！ 否则换行*/
     margin-right: 0;
@@ -100,7 +97,7 @@ li a{
     align-items: center;                         /*文字垂直居中*/
     justify-content: center;                    /*文字水平居中*/
     background-image: url(../icon/1.jpg);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;         
     background-size: cover;                   /*图片充满盒子*/
     text-decoration: none;                   /*不要下划线*/
     text-shadow: 3px 3px 3px black;
@@ -126,5 +123,54 @@ li a{
     background-image: url(../icon/youtube.jpg);
     background-position-x: 1px;
 }
+#gmap{
+    background-image: url(../icon/gmap.jpg);
+}
+#sgou{
+    background-image: url(../icon/4gous.jpg);
 
-
+}
+#orm{
+    background-image: url(../icon/opm.jpg);
+    background-position: 0px,0px;
+}
+#WTlive{
+    background-image: url(../icon/WTlive.png);
+}
+#github{
+    background-image: url(../icon/github.jpg);
+}
+#fl24{
+    background-image: url(../icon/fl24.jpg);
+}
+#x{
+    background-image: url(../icon/x.jpg);
+}
+#buff{
+    background-image: url(../icon/buff.jpg);
+}
+#WTwiki{
+    background-image: url(../icon/WTwiki.jpg);
+}
+#rammb{
+    background-image: url(../icon/rammb.jpg);
+}
+#noaa{
+    background-image: url(../icon/noaa.jpg);
+}
+#fnmoc{
+    background-image: url(../icon/fnmoc.jpg);
+}
+#jtwc{
+    background-image: url(../icon/jtwc.jpg);
+}
+#jaxa{
+    background-image: url(../icon/jaxa.jpg);
+}
+#nrl{
+    background-image: url(../icon/nrl.jpg);
+}
+#tw{
+    background-image: url(../icon/tw.jpg);
+    font-size: 27px;
+}

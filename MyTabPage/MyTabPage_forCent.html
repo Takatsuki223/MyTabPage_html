@@ -10,10 +10,10 @@
             const now = new Date();  
             // 转换为北京时间（UTC+8）  
             const beijingTime = new Date(now.getTime() + 8 * 60 * 60 * 1000);  
-        // UTC时间，只保留月份（英文缩写）、日期和时间  
+            // UTC时间，只保留月份（英文缩写）、日期和时间  
             const utcMonth = now.toUTCString().split(' ')[2]; // 月份英文缩写  
             const utcDate = now.getUTCDate(); // 日期  
-            const utcHours = now.getUTCHours().toString().padStart(2, '0'); // 小时，不足两位前面补0  
+            const utcHours = now.getUTCHours().toString().padStart(2, '0');     // 小时，不足两位前面补0  
             const utcMinutes = now.getUTCMinutes().toString().padStart(2, '0'); // 分钟，不足两位前面补0  
             const utcSeconds = now.getUTCSeconds().toString().padStart(2, '0'); // 秒，不足两位前面补0  
             // 格式化UTC时间  
@@ -24,7 +24,7 @@
             document.getElementById('utcTime').innerText = utcTimeFormatted; 
           
             // 每隔一秒更新时间  
-            setTimeout(updateTime, 1000);  
+            setTimeout(updateTime, 1000);
         }  
           
         // 页面加载完成后立即更新时间  
@@ -44,19 +44,19 @@
     <span style="margin-left: 280px;">铁路</span>
     </h2>   
     <div style="margin-left: 30px;" class="imgC-L" id="bili"><a class="link" href="https://www.bilibili.com/" target="_blank">&nbsp;</a></div>
-    <div style="margin-left: 50px;" class="imgC-S" id="dapiya"><a class="link" href="https://www.dapiya.top/satellite/floater/" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="tt"><a class="link" href="https://www.tropicaltidbits.com/storminfo/" target="_blank">&nbsp;</a></div>
+    <div style="margin-left: 50px;" class="imgC-S" id="dapiya"><a class="link" href="https://www.dapiya.cn/satellite/floater/" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="tt"><a class="link" href="https://www.tropicaltidbits.com/storminfo/" target="_blank">&nbsp;</a></div>
     <div style="margin-left: 10px;" class="imgC-S" id="zh"><a class="link" href="http://weather.zhuhai.gov.cn/#/met-services/station-rank" target="_blank">珠海</a></div><div style="margin-left: 10px;" class="imgC-S" id="sz"><a class="link" href="http://tf.121.com.cn/index.html" target="_blank">深圳</a></div>
-    <div style="margin-left: 10px;" class="imgC-S" id="temp1"><a class="link" href="https://tieba.baidu.com/p/9667649084?pn=299" target="_blank">99W</a></div>
+    <div style="margin-left: 10px;" class="imgC-S" id="temp1"><a class="link" href="https://tieba.baidu.com/p/9977049755?pn=299" target="_blank">19W</a></div>
     <div style="margin-left: 50px;" class="imgC-L" id="xuezai"><a class="link" href="https://i.mooc.chaoxing.com/space/" target="_blank">学在西电</a></div>
     <div style="margin-left: 50px;" class="imgC-L" id="opm"><a class="link" href="https://www.openrailwaymap.org/" target="_blank">OpenRail Map</a></div>
     <div style="margin-left: 10px;" class="imgC-S" id="ekis"><a class="link" href="https://roote.ekispert.net/" target="_blank">&nbsp;</a></div>
 
     <p></p>
 
-    <div style="margin-left: 30px;" class="imgC-S" id="ds"><a class="link" href="https://chat.deepseek.com/" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="CSDN"><a class="link" href="https://www.csdn.net/" target="_blank">&nbsp;</a></div>
+    <div style="margin-left: 30px;" class="imgC-S" id="ds"><a class="link" href="https://chat.deepseek.com/" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="niuke"><a class="link" href="https://www.nowcoder.com/" target="_blank">&nbsp;</a></div>
     <div style="margin-left: 50px;" class="imgC-S" id="CIMSS"><a class="link" href="https://tropic.ssec.wisc.edu/real-time/windmain.php?&basin=westpac&sat=wgms&prod=wvir&zoom=&time=" target="_blank">风分析</a></div><div style="margin-left: 10px;" class="imgC-S" id="CIMSS"><a class="link" href="https://tropic.ssec.wisc.edu/real-time/dlmmain.php?&basin=westpac&sat=wgms&prod=dlm1&zoom=&time=" target="_blank">流场</a></div>
     <div style="margin-left: 10px;" class="imgC-S" id="cma"><a class="link" href="http://www.nmc.cn/publish/typhoon/typhoon_new.html" target="_blank">报文</a></div><div style="margin-left: 10px;" class="imgC-S" id="cma"><a class="link" href="http://www.nmc.cn/publish/observations/china/dm/weatherchart-h500.htm" target="_blank">天气图</a></div>
-    <div style="margin-left: 10px;" class="imgC-S" id="temp2"><a class="link" href="https://tieba.baidu.com/p/9677731056?pn=299"  target="_blank">90W</a></div>
+    <div style="margin-left: 10px;" class="imgC-S" id="temp2"><a class="link" href="https://tieba.baidu.com/p/9893890007?pn=299"  target="_blank">&nbsp;</a></div>
     <div style="margin-left: 50px;" class="imgC-L" id="yizhanshi"><a class="link" href="http://ehall.xidian.edu.cn/new/index.html" target="_blank">一站式平台</a></div>
     <div style="margin-left: 50px;" class="imgC-L" id="jremap"><a class="link" href="https://www.jreast.co.jp/map/" target="_blank">JRE-MAP</a></div>
     <div style="margin-left: 10px;" class="imgC-S" id="transit"><a class="link" href="https://transit.yahoo.co.jp/" target="_blank">&nbsp;</a></div>
@@ -75,7 +75,7 @@
     <p></p>
 
     <div style="margin-left: 30px;" class="imgC-S" id="tieba"><a class="link" href="https://tieba.baidu.com/" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="ditu"><a class="link" href="https://map.baidu.com/" target="_blank">&nbsp;</a></div>
-    <div style="margin-left: 50px;" class="imgC-S" id="rammb"><a class="link" href="https://rammb-data.cira.colostate.edu/tc_realtime/" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="ew"><a class="link" href="https://www.easterlywave.com/" target="_blank">&nbsp;</a></div>
+    <div style="margin-left: 50px;" class="imgC-S" id="rammb"><a class="link" href="https://rammb-data.cira.colostate.edu/tc_realtime/" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="dxtwt"><a class="link" href="https://www.weather.org.hk/" target="_blank">汇总</a></div>
     <div style="margin-left: 10px;" class="imgC-S" id="hk"><a class="link" href="https://www.hko.gov.hk/sc/wxinfo/ts/index_gust.htm" target="_blank">最大风</a></div><div style="margin-left: 10px;" class="imgC-S" id="hk"><a class="link" href="https://www.hko.gov.hk/sc/wxinfo/ts/display_element_ff.htm" target="_blank">风变化</a></div>
     <div style="margin-left: 10px;" class="imgC-S" id="typhoon"><a class="link" href="https://typhoon.slt.zj.gov.cn/default.aspx" target="_blank">路径</a></div>
     <div style="margin-left: 50px;" class="imgC-L" id="xuanke"><a class="link" href="https://xk.xidian.edu.cn/xsxk/profile/index.html" target="_blank">选课</a></div>
@@ -84,9 +84,9 @@
 
     <p></p>
 
-    <div style="margin-left: 30px;" class="imgC-S" id="deep"><a class="link" href="https://www.deepl.com/zh/translator" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="WTlive"><a class="link" href="https://live.warthunder.com/feed/camouflages/" target="_blank">涂装</a></div>
-    <div style="margin-left: 50px;" class="imgC-S" id="dapiya"><a class="link" href="https://data.dapiya.top/product/mw/?C=M&O=D" target="_blank">底层</a></div><div style="margin-left: 10px;" class="imgC-S" id="dapiya"><a class="link" href="https://data.dapiya.top/product/wind/?C=M&O=D" target="_blank">风场</a></div>
-    <div style="margin-left: 10px;" class="imgC-S" id="f13"><a class="link" href="https://www.force-13.com/" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="rader"><a class="link" href="http://www.weather.com.cn/radar/index2021.shtml" target="_blank">雷达</a></div>
+    <div style="margin-left: 30px;" class="imgC-S" id="xhs"><a class="link" href="https://www.xiaohongshu.com/explore" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="WTlive"><a class="link" href="https://live.warthunder.com/feed/camouflages/" target="_blank">涂装</a></div>
+    <div style="margin-left: 50px;" class="imgC-S" id="dapiya"><a class="link" href="https://data.dapiya.cn/product/mw/?C=M&O=D" target="_blank">底层</a></div><div style="margin-left: 10px;" class="imgC-S" id="dapiya"><a class="link" href="https://data.dapiya.cn/product/wind/?C=M&O=D" target="_blank">风场</a></div>
+    <div style="margin-left: 10px;" class="imgC-S" id="tcs"><a class="link" href="https://tropic.ssec.wisc.edu/real-time/summary/" target="_blank">TC分析</a></div><div style="margin-left: 10px;" class="imgC-S" id="rader"><a class="link" href="http://www.weather.com.cn/radar/index2021.shtml" target="_blank">雷达</a></div>
     <div style="margin-left: 10px;" class="imgC-S" id="huansuan"><a class="link" href="https://speed.bmcx.com/"   target="_blank">换算</a></div>
     <div style="margin-left: 50px;" class="imgC-L" id="xdf"><a class="link" href="https://study.koolearn.com/my" target="_blank">&nbsp;</a></div>
     <div style="margin-left: 50px;" class="imgC-L" id="gousya"><a class="link" href="https://4gousya.net/" target="_blank">鉄道車両・動向</a></div>
@@ -95,9 +95,9 @@
     <p></p>
 
     <div style="margin-left: 30px;" class="imgC-S" id="baidu"><a class="link" href="https://www.baidu.com/" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="baidufanyi"><a class="link" href="https://fanyi.baidu.com/" target="_blank">&nbsp;</a></div>
-    <div style="margin-left: 50px;" class="imgC-S" id="jixi"><a class="link" href="https://www.weathernerds.org/tc_guidance/" target="_blank">总图</a></div><div style="margin-left: 10px;" class="imgC-S" id="jixi2"><a class="link" href="https://www.weathernerds.org/models/" target="_blank">分时</a></div>
+    <div style="margin-left: 50px;" class="imgC-S" id="jixi"><a class="link" href="https://www.weathernerds.org/tc_guidance/" target="_blank">总图</a></div><div style="margin-left: 10px;" class="imgC-S" id="jixi2"><a class="link" href="https://www.weathernerds.org/models/gefs.html" target="_blank">分时</a></div>
     <div style="margin-left: 10px;" class="imgC-S" id="global"><a class="link" href="http://www.meteomanz.com/index?l=1" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="jma"><a class="link" href="https://www.jma.go.jp/bosai/map.html#10/26.225/127.209/&elem=wind&contents=amedas&interval=60" target="_blank">实测</a></div>
-     <div style="margin-left: 10px;" class="imgC-S" id="zoomearth"><a class="link" href="https://zoom.earth/"   target="_blank">&nbsp;</a></div>
+     <div style="margin-left: 10px;" class="imgC-S" id="airI"><a class="link" href="https://q-weather.info/weather/59985/"   target="_blank">单站</a></div>
     <div style="margin-left: 50px;" class="imgC-L" id="xdfys"><a class="link" href="https://ieltscat.xdf.cn/practice/listen/order" target="_blank">&nbsp;</a></div>
     <div style="margin-left: 50px;" class="imgC-L" id="l"><a class="link" href="https://www.tropicaltidbits.com/sat/" target="_blank">&nbsp;</a></div>
     <div style="margin-left: 10px;" class="imgC-S" id="l"><a class="link" href="https://www.tropicaltidbits.com/sat/" target="_blank">&nbsp;</a></div>
@@ -107,7 +107,7 @@
     <div style="margin-left: 30px;" class="imgC-S" id="s"><a class="link" href="https://www.baidu.com/" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="s"><a class="link" href="https://fanyi.baidu.com/" target="_blank">&nbsp;</a></div>
     <div style="margin-left: 50px;" class="imgC-S" id="jidonguance"><a class="link" href="https://weather-models.info/latest/himawari-target.html" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="zhuifeng"><a class="link" href="https://www.storm-chasers.cn/" target="_blank">&nbsp;</a></div>
     <div style="margin-left: 10px;" class="imgC-S" id="jma"><a class="link" href="https://www.jma.go.jp/bosai/nowc/" target="_blank">雷达</a></div><div style="margin-left: 10px;" class="imgC-S" id="jma"><a class="link" href="https://www.jma.go.jp/bosai/weather_map/" target="_blank">天气图</a></div>
-    <div style="margin-left: 10px;" class="imgC-S" id="s"><a class="link" href="https://www.tropicaltidbits.com/sat/">&nbsp;</a></div>
+    <div style="margin-left: 10px;" class="imgC-S" id="jma"><a class="link" href="https://www.data.jma.go.jp/mscweb/en/product/aswind.php" target="_blank">TS风场</a></div>
     <div style="margin-left: 50px;" class="imgC-L" id="l"><a class="link" href="https://www.tropicaltidbits.com/sat/">&nbsp;</a></div>
     <div style="margin-left: 50px;" class="imgC-L" id="l"><a class="link" href="https://www.tropicaltidbits.com/sat/">&nbsp;</a></div>
     <div style="margin-left: 10px;" class="imgC-S" id="l"><a class="link" href="https://www.tropicaltidbits.com/sat/">&nbsp;</a></div>
@@ -115,9 +115,9 @@
     <p></p>
 
     <div style="margin-left: 30px;" class="imgC-S" id="s"><a class="link" href="https://www.baidu.com/" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="s"><a class="link" href="https://fanyi.baidu.com/" target="_blank">&nbsp;</a></div>
-    <div style="margin-left: 50px;" class="imgC-S" id="dapiya"><a class="link" href="https://data.dapiya.top/history/" target="_blank">历史</a></div><div style="margin-left: 10px;" class="imgC-S" id="dapiya"><a class="link" href="https://ai-vis.dapiya.top/" target="_blank">AI-VIS</a></div>
-    <div style="margin-left: 10px;" class="imgC-S" id="s"><a class="link" href="https://www.tropicaltidbits.com/sat/" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="s"><a class="link" href="https://www.tropicaltidbits.com/sat/" target="_blank">&nbsp;</a></div>
-    <div style="margin-left: 10px;" class="imgC-S" id="s"><a class="link" href="https://www.tropicaltidbits.com/sat/">&nbsp;</a></div>
+    <div style="margin-left: 50px;" class="imgC-S" id="dapiya"><a class="link" href="https://data.dapiya.cn/history/" target="_blank">历史</a></div><div style="margin-left: 10px;" class="imgC-S" id="dapiya"><a class="link" href="https://ai-vis.dapiya.cn/sat.html" target="_blank">AI-VIS</a></div>
+    <div style="margin-left: 10px;" class="imgC-S" id="CclWx"><a class="link" href="https://cyclonicwx.com/models/" target="_blank">模型</a></div><div style="margin-left: 10px;" class="imgC-S" id="CclWx"><a class="link" href="https://cyclonicwx.com/sat/#ascat" target="_blank">风场</a></div>
+    <div style="margin-left: 10px;" class="imgC-S" id="panyu"><a class="link" href="http://swift.pyqxfw.cn/gzpyqx/">瞬时风</a></div>
     <div style="margin-left: 50px;" class="imgC-L" id="l"><a class="link" href="https://www.tropicaltidbits.com/sat/">&nbsp;</a></div>
     <div style="margin-left: 50px;" class="imgC-L" id="l"><a class="link" href="https://www.tropicaltidbits.com/sat/">&nbsp;</a></div>
     <div style="margin-left: 10px;" class="imgC-S" id="l"><a class="link" href="https://www.tropicaltidbits.com/sat/">&nbsp;</a></div>
@@ -127,7 +127,7 @@
     <div style="margin-left: 30px;" class="imgC-S" id="s"><a class="link" href="https://www.baidu.com/" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="s"><a class="link" href="https://fanyi.baidu.com/" target="_blank">&nbsp;</a></div>
     <div style="margin-left: 50px;" class="imgC-S" id="CIMSS"><a class="link" href="http://tropic.ssec.wisc.edu/real-time/adt/adt.html" target="_blank">ADT</a></div><div style="margin-left: 10px;" class="imgC-S" id="CIMSS"><a class="link" href="http://tropic.ssec.wisc.edu/real-time/satcon/" target="_blank">分析</a></div>
     <div style="margin-left: 10px;" class="imgC-S" id="s"><a class="link" href="https://www.tropicaltidbits.com/sat/" target="_blank">&nbsp;</a></div><div style="margin-left: 10px;" class="imgC-S" id="s"><a class="link" href="https://www.tropicaltidbits.com/sat/" target="_blank">&nbsp;</a></div>
-    <div style="margin-left: 10px;" class="imgC-S" id="s"><a class="link" href="https://www.tropicaltidbits.com/sat/">&nbsp;</a></div>
+    <div style="margin-left: 10px;" class="imgC-S" id="f13"><a class="link" href="https://www.force-13.com/">&nbsp;</a></div>
     <div style="margin-left: 50px;" class="imgC-L" id="l"><a class="link" href="https://www.tropicaltidbits.com/sat/">&nbsp;</a></div>
     <div style="margin-left: 50px;" class="imgC-L" id="l"><a class="link" href="https://www.tropicaltidbits.com/sat/">&nbsp;</a></div>
     <div style="margin-left: 10px;" class="imgC-S" id="l"><a class="link" href="https://www.tropicaltidbits.com/sat/">&nbsp;</a></div>
@@ -150,6 +150,7 @@
         display: inline-block;
         border-radius: 15px;
         font-weight:bold; 
+        
     }  
     .imgC-S{
         width: 100px;  
@@ -258,16 +259,16 @@
     border-radius: 15px;
     box-shadow: 3px 3px 2px rgba(70,70,70,1);
     }
-    #CSDN{
+    #niuke{
     display:inline-block; 
-    background-image:url(icon/CSDN.jpg); 
-    background-repeat:no-repeat; 
+    background-image:url(icon/niuke.jpg); 
+    background-repeat:no-repeat;     
     border-radius: 15px;
     box-shadow: 3px 3px 2px rgba(70,70,70,1);
     }
-    #deep{
+    #xhs{
     display:inline-block; 
-    background-image:url(icon/Deep.jpg); 
+    background-image:url(icon/xhs.jpg); 
     background-repeat:no-repeat; 
     border-radius: 15px;
     box-shadow: 3px 3px 2px rgba(70,70,70,1);
@@ -399,9 +400,9 @@
     border-radius: 15px;
     box-shadow: 3px 3px 2px rgba(70,70,70,1);
     }
-    #zoomearth{
+    #panyu{
     display:inline-block; 
-    background-image:url(icon/zoomearth.jpg); 
+    background-image:url(icon/panyu.jpg); 
     background-repeat:no-repeat; 
     border-radius: 15px;
     box-shadow: 3px 3px 2px rgba(70,70,70,1);
@@ -462,28 +463,28 @@
     border-radius: 15px;
     box-shadow: 3px 3px 2px rgba(70,70,70,1);
     }
-    #ew{
+    #dxtwt{
     display:inline-block; 
-    background-image:url(icon/ew.jpg); 
+    background-image:url(icon/dxtwt.jpg); 
     background-repeat:no-repeat; 
     border-radius: 15px;
     box-shadow: 3px 3px 2px rgba(70,70,70,1);
     }
     #temp1{
     display:inline-block; 
-    background-image:url(https://data.dapiya.top/history/99W/99W_wiki.png); 
+    background-image:url(https://data.dapiya.cn/history/19W/OTT/19W_OTT.png); 
     background-repeat:no-repeat; 
     border-radius: 15px;
     box-shadow: 3px 3px 2px rgba(70,70,70,1);
-    background-position-x: -50px;
+    /*background-position-x: -50px;*/
     }
     #temp2{
     display:inline-block; 
-    background-image:url(https://data.dapiya.top/history/90W/90W_wiki.png); 
+    background-image:url(https://data.dapiya.cn/history/10W/); 
     background-repeat:no-repeat; 
     border-radius: 15px;
     box-shadow: 3px 3px 2px rgba(70,70,70,1);
-    background-position-x: -50px;
+    /*background-position-x: -50px;*/
     }
     #jidonguance{
     display:inline-block; 
@@ -588,6 +589,27 @@
     #xdfys{
     display:inline-block; 
     background-image:url(icon/xdfys.jpg); 
+    background-repeat:no-repeat; 
+    border-radius: 15px;
+    box-shadow: 3px 3px 2px rgba(70,70,70,1);
+    }
+    #airI{
+    display:inline-block; 
+    background-image:url(icon/airI.png); 
+    background-repeat:no-repeat; 
+    border-radius: 15px;
+    box-shadow: 3px 3px 2px rgba(70,70,70,1);
+    }
+    #CclWx{
+    display:inline-block; 
+    background-image:url(icon/CclWx.jpg); 
+    background-repeat:no-repeat; 
+    border-radius: 15px;
+    box-shadow: 3px 3px 2px rgba(70,70,70,1);
+    }
+    #tcs{
+    display:inline-block; 
+    background-image:url(https://tropic.ssec.wisc.edu/real-time/mesoamv/2025/19W/plots/plot.gif); 
     background-repeat:no-repeat; 
     border-radius: 15px;
     box-shadow: 3px 3px 2px rgba(70,70,70,1);
