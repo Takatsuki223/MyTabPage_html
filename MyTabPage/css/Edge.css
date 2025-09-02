@@ -21,7 +21,7 @@
 .head_img{
     background-image: url("../icon/Headimg2.png");
     width: 1862px;                                  /*大小和1080p窗口打开时的通栏一样*/
-    height: 97px;                                /*指定高度，不指定高度会没有*/
+    height: 97px;                                  /*指定高度，不指定高度会没有*/
     margin: 0px auto;                             /*上下0，左右自动则居中！版心居中！*/
     position: relative;                          /*其子元素需要定位，作为父元素搞相对定位*/
     background-repeat: no-repeat;
@@ -60,12 +60,12 @@
 .wrapper .left{                     /*版心左块*/
     /* background-color: rgb(230, 230, 230); */
     height: 820px;
-    width: 1380px;
+    width: 1400px;
 }
 .wrapper .right{                    /*版心右块*/
     /* background-color: pink; */
     height: 820px;
-    width: 400px;
+    width: 420px;
 }
 ul{                                      /*列表的样式*/
     display: flex;                      /*方便一行显示，不竖着*/
@@ -76,101 +76,139 @@ ul{                                      /*列表的样式*/
 li{
     width: 120px;
     height: 120px;                                    
-    list-style: none;                                /*去除点符号*/
-    background-color:rgb(230, 230, 230);          /*做测试效果用*/
-    margin-bottom: 20px;                           /*每块的下间距*/
-    margin-right: 20px;                           /*每块的右间距*/
-    border-radius: 15%;                          /*圆角矩形圆角*/
-    box-shadow: 4px 4px 2.5px rgba(90, 90, 90, 1);
-    text-align: center;                         /*默认文字居中*/
+    list-style: none;                                   /*去除点符号*/
+    background-color:rgb(238, 243, 255);             /*默认背景颜色*/
+    margin: 10px;                                     /*每块周围初始有10px的外间距*/
+    border-radius: 15%;                              /*圆角矩形圆角*/
+    box-shadow: 4px 4px 2.5px rgba(90, 90, 90, 1);/*盒子的阴影*/
+    text-align: center;                            /*默认文字居中*/
+    position:relative;                            /*父元素，相对定位，给鼠标悬停动效预留*/
+    transition: all 0.3s;                        /*li过渡时间，动效实现*/
+    background-size: cover;                     /*背景图片充满*/
+    display: flex;                             /*盒子内部flex显示 方便文字居中*/
+    justify-content:center;                   /*保证文字水平居中*/
+    align-items: center;                     /*保证文字垂直居中*/
+    text-shadow: 3px 3px 3px black;         
+    font-weight: bold;                        
+    font-size: 27px;
+    color: white;    
     
 }
-.wrapper .left li:nth-child(10n){         /*版心左块，每行的末尾块不加右边距！ 否则换行*/
-    margin-right: 0;
-}
-.wrapper .right li:nth-child(3n){         /*版心右块，每行的末尾块不加右边距！ 否则换行*/   
-    margin-right: 0px;
-}
-li a{
-    display: flex;                                 /*直接改成flex，便于宽高和文字居中*/
-    height: 120px;                                /*写个高度即可 宽度继承*/
-    align-items: center;                         /*文字垂直居中*/
-    justify-content: center;                    /*文字水平居中*/
-    background-image: url(../icon/1.jpg);
-    background-repeat: no-repeat;         
-    background-size: cover;                   /*图片充满盒子*/
-    text-decoration: none;                   /*不要下划线*/
-    text-shadow: 3px 3px 3px black;
-    font-weight: bold;
-    font-size: 30px;
-    color: white;
-    border-radius: 15%;
 
+li:hover{
+    margin: 5px;                                           /*外间距都是5*/
+    width: 130px;                                         /*悬停放大到130px*/
+    height: 130px;                                       /*悬停放大到130px*/
+    font-size: 30px;                                    /*字号也变大*/ 
+    border-radius: 15%;  
+    box-shadow: 0px 0px 0px 4px rgba(90, 90, 90, 1);/*盒子的阴影*/
 }
+
+li a{
+    width: 120px;                                 /*初始宽度与li一致*/
+    height: 120px;                               /*初始高度与li一致*/
+    text-decoration: none;                      /*不要下划线*/
+    border-radius: 15%;                        /*圆角矩形*/
+    transition: all 0.3s;                     /*变化时间，出动画效果*/
+    position: absolute;                      /*绝对定位 为了脱标浮在li上*/
+    top: 0px;                               /*跟li的位置一致*/
+    left: 0px;                               
+    
+}
+
+li a:hover{
+    width: 130px;                      /*鼠标悬停后也a也放大*/
+    height: 130px;                    /*鼠标悬停后也a也放大*/
+    border-radius: 20%;              /*圆角矩形*/
+    position: absolute;             /*绝对定位 为了脱标浮在li上*/
+    top: -5px;                     /*跟li的位置一致*/
+    left: -5px;  
+    border: 5px inset #70bcff; /*外框线*/
+}
+
 #wiki{
     background-image: url(../icon/wiki.jpg);
     background-position-x: 2px;
+    transition: all 0.5s;
 }
 #wikim{
     background-image: url(../icon/wikim.jpg);
     background-position-x: 1px;
+    transition: all 0.5s;
 }
 #bili{
     background-image: url(../icon/bilis.jpg);
     background-position-x: 1px;
+    transition: all 0.5s;
 }
 #youtube{
     background-image: url(../icon/youtube.jpg);
     background-position-x: 1px;
+    transition: all 0.5s;
 }
 #gmap{
     background-image: url(../icon/gmap.jpg);
+    transition: all 0.5s;
 }
 #sgou{
     background-image: url(../icon/4gous.jpg);
+    transition: all 0.5s;
 
 }
 #orm{
     background-image: url(../icon/opm.jpg);
     background-position: 0px,0px;
+    transition: all 0.5s;
 }
 #WTlive{
     background-image: url(../icon/WTlive.png);
+    transition: all 0.5s;
 }
 #github{
     background-image: url(../icon/github.jpg);
+    transition: all 0.5s;
 }
 #fl24{
     background-image: url(../icon/fl24.jpg);
+    transition: all 0.5s;
 }
 #x{
     background-image: url(../icon/x.jpg);
+    transition: all 0.5s;
 }
 #buff{
     background-image: url(../icon/buff.jpg);
+    transition: all 0.5s;
 }
 #WTwiki{
     background-image: url(../icon/WTwiki.jpg);
+    transition: all 0.5s;
 }
 #rammb{
     background-image: url(../icon/rammb.jpg);
+    transition: all 0.5s;
 }
 #noaa{
     background-image: url(../icon/noaa.jpg);
+    transition: all 0.5s;
 }
 #fnmoc{
     background-image: url(../icon/fnmoc.jpg);
+    transition: all 0.5s;
 }
 #jtwc{
     background-image: url(../icon/jtwc.jpg);
+    transition: all 0.5s;
 }
 #jaxa{
     background-image: url(../icon/jaxa.jpg);
+    transition: all 0.5s;
 }
 #nrl{
     background-image: url(../icon/nrl.jpg);
+    transition: all 0.5s;
 }
 #tw{
     background-image: url(../icon/tw.jpg);
-    font-size: 27px;
+    transition: all 0.5s;
 }
